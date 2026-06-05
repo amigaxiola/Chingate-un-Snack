@@ -1,49 +1,121 @@
 /* Estilos responsive para móviles y tablets */
-@media (max-width: 768px) {
-    /* Ajustar layout inferior */
-    .contenido-inferior {
-        flex-direction: column;   /* Banner arriba, info abajo */
-        align-items: center;
+
+
+
+/* Tablets y Móviles (General) */
+@media (max-width: 850px) {
+    /* --- HEADER --- */
+    header {
+        flex-direction: column;
+        gap: 20px;
         text-align: center;
+        padding: 20px 10px;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* --- INDEX (CONTENIDO INFERIOR) --- */
+    .contenido-inferior {
+        flex-direction: column;
+        align-items: center;
         gap: 30px;
     }
 
     .bloque-banner img {
-        max-width: 100%;          /* Que el banner ocupe todo el ancho */
+        max-width: 100%;
+        width: 300px;
     }
 
     .bloque-info {
-        align-items: center;
+        padding-left: 0; /* Quitamos el padding excesivo */
         text-align: center;
+        align-items: center;
     }
 
-    
-    /* Snacks en columna si la pantalla es muy angosta */
+    .info-contacto {
+        align-items: center;
+    }
+
+    /* --- MENU PAGE --- */
+    .pizarra-menu {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .columna-contenido {
+        width: 100%;
+        padding: 0;
+    }
+
+    .divicion-vertical {
+        border-left: none;
+        border-top: 2.5px solid #00F0FF;
+        padding-top: 30px;
+        box-shadow: 0 -4px 8px -4px #00F0FF;
+    }
+}
+
+/* Móviles Pequeños */
+@media (max-width: 600px) {
+    /* --- INDEX (TARJETAS SNACKS) --- */
     .contenedor-marcos {
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
 
     .tarjeta-snack {
-        width: 80%;               /* Más grandes en móvil */
-        margin-bottom: 15px;
+        width: 100%; /* Ocupan todo el ancho disponible */
+        max-width: 350px;
     }
 
-    /* Ajustar tipografía para que no se vea demasiado grande */
+    /* --- PROMOS PAGE --- */
+    .contenedor-promos {
+        gap: 20px;
+    }
+
+    .tarjeta-promo {
+        width: 100% !important;
+        min-width: unset !important;
+        height: auto !important; /* Permitir que la altura se ajuste */
+        aspect-ratio: 3 / 4; /* Mantener una proporción similar */
+    }
+
+    /* --- AJUSTES DE TEXTO --- */
     .info-horario h2 {
         font-size: 18px;
     }
 
     .info-horario .hora {
-        font-size: 26px;
+        font-size: 28px;
+    }
+
+    .telefono {
+        font-size: 15px;
     }
 
     footer .eslogan {
-        font-size: 13px;
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    /* Ajuste de contenedor principal para evitar desbordes */
+    main, header, footer {
+        width: 95%;
+    }
+}
+
+/* Ajustes específicos para el Menú en pantallas medianas */
+@media (min-width: 601px) and (max-width: 850px) {
+    .tarjeta-snack {
+        width: 45%; /* Dos por fila en tablets si cabe */
     }
     
-    main, header, footer {
-        width: 100%;
-        max-width: 600px; /* vuelve a compacto en pantallas pequeñas */
+    .contenedor-marcos {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
