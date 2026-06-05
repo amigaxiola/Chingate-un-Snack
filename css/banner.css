@@ -1,0 +1,93 @@
+.contenido-inferior {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px; 
+}
+
+.bloque-banner img {
+    max-width: 250px;
+    border: 3px solid #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+.bloque-info {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 35px; 
+    padding-left: 150px; 
+}
+
+/* Horario */
+.info-horario h2 {
+    font-size: 20px;
+    color: #FFE600;
+    font-weight: 700;
+    text-shadow: 0 0 8px #FFE600;
+}
+
+.info-horario .hora {
+    font-size: 32px;
+    color: #FFE600;
+    font-weight: 900;
+    text-shadow: 0 0 15px #FFE600;
+}
+
+/*Control de espacio */
+.info-extras {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    margin-top: -15px;
+}
+/* Contacto */
+.info-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    margin-top: 10px; 
+}
+
+.link-social {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 2px;
+}
+
+.telefono {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Ubicación e Iconos Neón */
+.ico-detalle-neon {
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 10px; 
+    vertical-align: middle;
+}
+
+.ico-detalle-neon.rosa {
+    color: #ff007f;
+    border: 1px solid #ff007f;
+    box-shadow: 0 0 6px #ff007f, inset 0 0 3px #ff007f;
+}
+
+.ico-detalle-neon.azul {
+    color: #00ffff;
+    border: 1px solid #00ffff;
+    box-shadow: 0 0 6px #00ffff, inset 0 0 3px #00ffff;
+}

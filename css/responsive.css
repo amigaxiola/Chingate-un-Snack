@@ -1,0 +1,48 @@
+/* Estilos responsive para móviles y tablets */
+@media (max-width: 768px) {
+    /* Ajustar layout inferior */
+    .contenido-inferior {
+        flex-direction: column;   /* Banner arriba, info abajo */
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .bloque-banner img {
+        max-width: 100%;          /* Que el banner ocupe todo el ancho */
+    }
+
+    .bloque-info {
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Snacks en columna si la pantalla es muy angosta */
+    .contenedor-marcos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta-snack {
+        width: 80%;               /* Más grandes en móvil */
+        margin-bottom: 15px;
+    }
+
+    /* Ajustar tipografía para que no se vea demasiado grande */
+    .info-horario h2 {
+        font-size: 18px;
+    }
+
+    .info-horario .hora {
+        font-size: 26px;
+    }
+
+    footer .eslogan {
+        font-size: 13px;
+    }
+    
+    main, header, footer {
+        width: 100%;
+        max-width: 600px; /* vuelve a compacto en pantallas pequeñas */
+    }
+}

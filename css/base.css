@@ -1,0 +1,23 @@
+body {
+    background-color: #160a23;
+    background-image: url('../imagenes/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+
+    color: #ffffff;
+    height: auto;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    overflow: auto;
+}
+
+main, header, footer {
+    width: 95%;
+    max-width: 1000px;
+}
