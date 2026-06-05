@@ -17,6 +17,7 @@
         text-align: center;
     }
 
+    
     /* Snacks en columna si la pantalla es muy angosta */
     .contenedor-marcos {
         flex-direction: column;
